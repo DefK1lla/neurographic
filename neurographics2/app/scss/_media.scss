@@ -1,0 +1,87 @@
+@media(min-width: 1024px){
+    html, body{
+        font-size: 18px;
+    }
+
+    .header{
+        &__img{
+            margin-top: -230px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .title{
+        font-size: 2.3rem;
+    }
+
+    // --
+    // .page-title{
+    //     font-size: 1.6rem;
+    // }
+
+    .about{
+        &__body{
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .course{
+        &__item{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .results{
+        &__item{
+            text-align: center;
+        }
+    }
+
+    .author{
+        &__body{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__img{
+            margin-right: 0;
+        }
+
+        &__content{
+            order: -1;
+        }
+
+        &__title{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    html, body{
+        font-size: 14px;
+    }
+
+    .header{
+        text-align: center;
+
+        &__cols{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__img{
+            margin-top: 0;
+        }
+    }
+
+    .timer{
+        &__body{
+            justify-content: center;
+        }
+    }
+}

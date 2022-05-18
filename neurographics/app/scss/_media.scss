@@ -1,0 +1,87 @@
+@media(min-width: 1024px){
+    html, body{
+        font-size: 18px;
+    }
+
+    .header{
+        &__img{
+            margin-top: -230px;
+            margin-bottom: -35px;
+
+            
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .title{
+        font-size: 2.3rem;
+    }
+
+    .header{
+        &__btn{
+            &--sm{
+                display: block;
+            }
+
+            &--lg{
+                display: none;
+            }
+        }
+    }
+
+    .practice{
+        &__body{
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .header{
+        &__img{
+            margin-bottom: -50px;
+        }
+    }
+
+    .author{
+        &__body{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__img{
+            margin-right: 0;
+        }
+
+        &__content{
+            order: -1;
+        }
+
+        &__title{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    html, body{
+        font-size: 14px;
+    }
+
+    .header{
+        text-align: center;
+
+        &__cols{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__img{
+            margin-top: 0;
+        }
+    }
+}
