@@ -47,7 +47,7 @@ function scriptsBuilder() {
 function stylesBuilder() {
     return src('app/scss/style.scss')
         .pipe(scss({ outputStyle: 'compressed' }))
-        .pipe(concat('style.min.css'))
+        .pipe(concat('free.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true
@@ -72,7 +72,7 @@ function watcher() {
 
 function builder() {
     return src([
-        'app/css/style.min.css',
+        'app/css/free.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
         'app/*.html'
